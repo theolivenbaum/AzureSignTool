@@ -12,6 +12,8 @@
     <IsPackable>true</IsPackable>
   	<ProductUrl>https://vcsjones.com/azuresigntool</ProductUrl>
 		<Authors>Kevin Jones</Authors>
+    <RepositoryUrl>https://github.com/vcsjones/AzureSignTool</RepositoryUrl>
+    <PackageTags>azuresigntool;azure;keyvault;codesign</PackageTags>
   </PropertyGroup>
   
   <ItemGroup>
