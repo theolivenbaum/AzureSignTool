@@ -44,10 +44,17 @@ steps:
     versioningScheme: 'off'
     buildProperties: 'Version="0.0.$(build.buildId)";AllowUnsafeBlocks="True";LangVersion="latest"'
 
+
+- task: CmdLine@2
+  displayName: 'list electronProject build'
+  inputs:
+    script: 'ls -hR $(Build.ArtifactStagingDirectory)'
+
+
 - task: NuGetCommand@2
   displayName: 'push nuget'
   inputs:
     command: 'push'
-    packagesToPush: '**\AzureSign.0.0.$(build.buildId).nupkg'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)\AzureSign.0.0.$(build.buildId).nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'nuget-curiosity'
