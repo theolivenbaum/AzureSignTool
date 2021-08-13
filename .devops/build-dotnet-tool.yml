@@ -9,10 +9,6 @@ trigger:
   branches:
     include:
     - master
-  paths:
-    include:
-    - src/*
-    - .devops/build-dotnet-tool.yml
 
 pr: none
 
