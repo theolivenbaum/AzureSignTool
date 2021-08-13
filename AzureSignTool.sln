@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignTool", "src\AzureSignTool\AzureSignTool.csproj", "{98E0A863-FE5E-452F-BF05-427F92915D24}"
 EndProject
@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43F724F2-87A7-4ACC-B53F-B0A257FF44E2}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.devops\build-dotnet-tool.yml = .devops\build-dotnet-tool.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSign.Core.Tests", "test\AzureSign.Core.Tests\AzureSign.Core.Tests.csproj", "{66894D4A-56C9-47E8-9368-C2CC9D7363F5}"
@@ -18,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{705BE9C7-330
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{800D5449-F840-43E6-9559-28EB45AEA60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSignTool.Tests", "test\AzureSignTool.Tests\AzureSignTool.Tests.csproj", "{57EAFBF5-4AE6-4483-973D-2341AEB68CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignTool.Tests", "test\AzureSignTool.Tests\AzureSignTool.Tests.csproj", "{57EAFBF5-4AE6-4483-973D-2341AEB68CE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
