@@ -1,5 +1,5 @@
 variables:
-  project:  '$(Build.SourcesDirectory)/src/AzureSignTool/AzureSignTool.csproj'
+  project:  '$(Build.SourcesDirectory)\src\AzureSignTool\AzureSignTool.csproj'
   buildConfiguration: 'Release'
 
 pool:
@@ -20,7 +20,7 @@ steps:
   inputs:
     packageType: sdk
     version: 5.0.100
-    installationPath: $(Agent.ToolsDirectory)/dotnet
+    installationPath: $(Agent.ToolsDirectory)\dotnet
 
 - task: DotNetCoreCLI@2
   displayName: 'restore nuget'
@@ -48,6 +48,6 @@ steps:
   displayName: 'push nuget'
   inputs:
     command: 'push'
-    packagesToPush: '**/AzureSign.0.0.$(build.buildId).nupkg'
+    packagesToPush: '**\AzureSign.0.0.$(build.buildId).nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'nuget-curiosity'
