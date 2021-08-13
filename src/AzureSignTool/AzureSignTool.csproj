@@ -10,6 +10,8 @@
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <IsPackable>true</IsPackable>
+  	<ProductUrl>https://vcsjones.com/azuresigntool</ProductUrl>
+		<Authors>Kevin Jones</Authors>
   </PropertyGroup>
   
   <ItemGroup>
