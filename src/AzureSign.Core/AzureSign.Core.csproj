@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Description>Authenticode signing library.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
